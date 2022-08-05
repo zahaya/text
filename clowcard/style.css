@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FC9ABF;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+}
+
+.show-card{
+  display: flex;
+  margin: 10px;
+}
+
+.front,
+.back {
+  margin: 20px 20px;
+  perspective: 400px;
+  border-radius: 9px;
+}
+
+.front:hover img {
+  transform: rotateY(180deg);
+  transition: all 1s ease-in-out;
+}
+
+.back:hover img {
+  transform: rotateY(-180deg);
+  transition: all 1s ease-in-out;
+}
+
+/* 翻转应用 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 350px;
+  margin: 20px 20px;
+  /* 翻转更立体 */
+  perspective: 400px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  /* 背面不显示 */
+  backface-visibility: hidden;
+  transition: all 1s ease-in-out;
+  border-radius: 9px;
+}
+
+.card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-back {
+  transform: rotateY(0deg);
+}
+
+/* 移动到卡牌时换到正面 */
+.card:hover .card-front {
+  transform: rotateY(0deg);
+} 
+
+/* 移动到卡牌时换到背面 */
+.card:hover .card-back {
+  transform: rotateY(180deg);
+}
