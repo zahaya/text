@@ -1,0 +1,76 @@
+.footer {
+  padding-top: 55px;
+  background-color: #22212F;
+}
+
+.foot-content {
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.foot-content::after {
+  content: '';
+  position: absolute;
+  left: -120px;
+  bottom: 0;
+  width: 1400px;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,.1), #4c4f5f, rgba(0,0,0,.1));
+}
+
+
+.foot-contact {
+  width: 229px;
+  border-right: 1px solid #4c4f5f;
+  padding: 0 60px 0 65px
+}
+
+
+.icon-tel::before {
+float: left;
+content: url(img/icon-tel.png);
+width: 43px;
+height: 43px;
+margin-right: 6px;
+}
+
+.qr-wrpa {
+  padding: 0 35px;
+}
+
+.qr-wrpa img {
+  padding: 20px 0 15px 0;
+}
+
+
+.foot-connect {
+  width: 804px;
+  padding-left: 94px;
+}
+
+.foot-connect dl {
+  width: 188px;
+}
+
+.foot-connect dl dt {
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.foot-connect dl dd {
+  padding-left: 3px;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.foot-connect dl dd a {
+  color: #cecece;
+}
+
+.foot-archival {
+  text-align: center;
+  color: #7e8088;
+  line-height: 60px;
+}
